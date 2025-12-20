@@ -1,0 +1,52 @@
+======================================================================
+EMOTION DETECTION MODEL - TRAINING LOG
+======================================================================
+
+Date: 2025-11-16 01:25:34
+Device: cuda
+
+CONFIGURATION
+----------------------------------------------------------------------
+Batch Size: 64
+Max Epochs: 40
+Learning Rate: 0.001
+Patience: 10
+
+MODEL ARCHITECTURE
+----------------------------------------------------------------------
+Total Parameters: 11,564,999
+Trainable Parameters: 11,564,999
+
+DATASET
+----------------------------------------------------------------------
+Train Samples: 24,402
+Val Samples: 4,307
+Test Samples: 7,178
+Emotions: angry, disgust, fear, happy, sad, surprise, neutral
+
+TRAINING RESULTS
+----------------------------------------------------------------------
+Epochs Trained: 40
+Training Time: 29.1 minutes (0.49 hours)
+Early Stopped: No
+Best Val Accuracy: 63.27%
+Final Val Accuracy: 63.20%
+
+TEST RESULTS
+----------------------------------------------------------------------
+Test Accuracy: 63.40%
+Test Loss: 0.9884
+
+PER-CLASS PERFORMANCE
+----------------------------------------------------------------------
+Emotion      Accuracy   Precision    Recall     F1-Score  
+----------------------------------------------------------------------
+Angry        0.5334     0.5609       0.5334     0.5468    
+Disgust      0.7117     0.4158       0.7117     0.5249    
+Fear         0.3584     0.4900       0.3584     0.4140    
+Happy        0.8348     0.8712       0.8348     0.8526    
+Sad          0.5285     0.4871       0.5285     0.5069    
+Surprise     0.8267     0.7090       0.8267     0.7633    
+Neutral      0.6221     0.5873       0.6221     0.6042    
+
+======================================================================

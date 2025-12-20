@@ -1,0 +1,21 @@
+{
+    "model_name": "Enhanced ArcFace ResNet-34",
+    "enhancements": [
+        "ArcFace loss (margin=0.5, scale=30)",
+        "SE attention blocks",
+        "Dual pooling (avg+max)",
+        "Label smoothing (0.1)",
+        "OneCycleLR with high max_lr",
+        "Heavy augmentation",
+        "Gradient clipping"
+    ],
+    "performance": {
+        "test_acc": 0.8565459610027855,
+        "top5_acc": 0.9930362116991643,
+        "mean_per_identity": 0.9228199718706047,
+        "same_person_sim": 0.9148223996162415,
+        "diff_person_sim": 0.02704896405339241
+    },
+    "training_time_minutes": 9.788767416666666,
+    "date": "2025-12-04 01:59:05"
+}

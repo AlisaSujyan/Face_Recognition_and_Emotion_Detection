@@ -1,0 +1,40 @@
+{
+    "model_name": "EmotionNet PyTorch",
+    "architecture": "ResNet-style CNN",
+    "parameters": 11564999,
+    "num_classes": 7,
+    "emotion_labels": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "sad",
+        "surprise",
+        "neutral"
+    ],
+    "training": {
+        "epochs_trained": 40,
+        "max_epochs": 40,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "training_time_minutes": 29.106494816666668,
+        "early_stopped": false
+    },
+    "performance": {
+        "best_val_acc": 0.6326909681913164,
+        "final_val_acc": 0.6319944276758764,
+        "test_acc": 0.634020618556701,
+        "test_loss": 0.9884077589984855,
+        "per_class_accuracy": {
+            "angry": 0.5334029227557411,
+            "disgust": 0.7117117117117117,
+            "fear": 0.3583984375,
+            "happy": 0.8348365276211951,
+            "sad": 0.5284683239775461,
+            "surprise": 0.8267148014440433,
+            "neutral": 0.6220600162206001
+        }
+    },
+    "date": "2025-11-16 01:25:34",
+    "device": "cuda"
+}

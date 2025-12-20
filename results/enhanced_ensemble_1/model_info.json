@@ -1,0 +1,41 @@
+{
+    "model_name": "Enhanced Ensemble EmotionNet",
+    "architecture": "ResNet + SE + Focal Loss",
+    "num_models": 5,
+    "enhancements": [
+        "Focal Loss (gamma=2.5)",
+        "SE attention blocks",
+        "OneCycleLR with warmup",
+        "Gradient clipping",
+        "Weighted ensemble",
+        "Voting ensemble"
+    ],
+    "training": {
+        "epochs": 60,
+        "batch_size": 64,
+        "training_time_minutes": 128.62528926666667
+    },
+    "performance": {
+        "individual_accs": [
+            0.6454444134856506,
+            0.6453050989133463,
+            0.6547784898300362,
+            0.6430760657564781,
+            0.650459738088604
+        ],
+        "voting_acc": 0.6702424073558094,
+        "weighted_acc": 0.6804123711340206,
+        "best_ensemble_acc": 0.6804123711340206,
+        "improvement_over_best": 0.025633881303984474,
+        "per_class_accuracy": {
+            "angry": 0.6826722338204593,
+            "disgust": 0.6756756756756757,
+            "fear": 0.4794921875,
+            "happy": 0.8162344983089064,
+            "sad": 0.5228548516439455,
+            "surprise": 0.8712394705174489,
+            "neutral": 0.681265206812652
+        }
+    },
+    "date": "2025-12-03 04:54:26"
+}
